@@ -139,6 +139,7 @@ The model identified 99% of actual churned customers, but this high recall is at
 
 ## DATA VISUALIZATION
 
+![travel pics](https://github.com/debbhie/COGNORISE-INTERNSHIP-TRAVEL-AND-TOUR-ANALYSIS/assets/161854079/be610710-7b2a-454e-80b2-e0af867a34ec)
 
 ## INSIGHTS
  * High Churn Rate Among Higher Income Customers: Higher income customers tend to churn more, possibly due to their greater number of alternatives. This group may seek higher value or more personalized services.
