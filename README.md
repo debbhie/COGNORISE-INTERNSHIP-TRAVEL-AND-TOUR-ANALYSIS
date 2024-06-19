@@ -1,6 +1,19 @@
 # TRAVEL AND TOUR CUSTOMER ANALYSIS
 
 ## TABLE OF CONTENT
+- [TRAVEL AND TOUR CUSTOMER ANALYSIS OVERVIEW](travel-tour-customer-analysis-overview)
+- [LANDING PAGE](landing-page)
+- [DATA SOURCE](data-source)
+- [TOOLS](tools)
+- [TYPES OF ANALYSIS USED FOR THIS PROJECT](types-of-analysis-used-for-this-project)
+- [KEY PERFORMANCE INDICATORS](key-performance-indicators)
+- [DATA CLEANING](data-cleaning)
+- [DATA PROCESSING](data-processing)
+- [DATA ANALYSIS](data-analysis)
+- [DATA VISUALIZATION](data-visualization)
+- [INSIGHTS](insights)
+- [RECOMMENDATION](recommendation)
+
 
 ## TRAVEL AND TOUR CUSTOMER ANALYSIS OVERVIEW
 This report presents an in-depth analysis of the "Tour and Travel Customer" dataset, which consists of 954 entries. The dataset includes various attributes related to customers such as age, frequent flyer status, income level, service usage, and whether they have synced their account to social media or booked a hotel through the company. The primary goal of this analysis is to provide insights into customer behavior, identify key factors influencing customer churn, and recommend strategies for improving customer retention and engagement.
