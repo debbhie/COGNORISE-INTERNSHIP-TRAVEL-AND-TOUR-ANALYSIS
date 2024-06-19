@@ -23,13 +23,31 @@ This dataset is from cognorise internship.
 - Microsft excel- dashboard/report
 
 ## TYPES OF ANALYSIS USED FOR THIS PROJECT
+* Descriptive Analysis: Used to analyze and describe the main characteristics of the data set.
+* Exploratory Data Analysis: Used for correlation matrix, churn by demographic
+* Predictive Analysis: Used for churn prediction.
 
 ## KEY PERFORMANCE INDICATORS
+* Total number of customers
+* Average age of customers
+* Percentage of frequent flyers vs non frequent flyers
+* Proportion of income distribution of customers in different categories
+* Average number of services opted for by customers
+* Number of times customers opted for their services
+* Percentage of customers with account synced to their social media
+* Percentage of customers booking hotel through their services
+* Percentage of customers who churned vs customers who did not churn
+* Predictive model accuracy (accuracy, precision and recall)
 
 ## DATA CLEANING
-
+These processes were carried out using power query
+* Duplicates were not found
+* Spelling errors were corrected
+  
 ## DATA PROCESSING
-
+* Predicted_churn column was created
+* Churn_status column was created as well
+  
 ## DATA ANALYSIS
 
 ## DATA VISUALIZATION
