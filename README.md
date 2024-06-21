@@ -1,7 +1,7 @@
 # TRAVEL AND TOUR CUSTOMER ANALYSIS
 
 ## TABLE OF CONTENT
-- [TRAVEL AND TOUR CUSTOMER ANALYSIS OVERVIEW](#travel-tour-customer-analysis-overview)
+- [TRAVEL AND TOUR CUSTOMER ANALYSIS OVERVIEW](#travel-and-tour-customer-analysis-overview)
 - [LANDING PAGE](#landing-page)
 - [DATA SOURCE](#data-source)
 - [TOOLS](#tools)
