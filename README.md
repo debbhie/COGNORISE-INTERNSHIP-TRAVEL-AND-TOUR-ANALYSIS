@@ -12,7 +12,7 @@
 - [DATA ANALYSIS](#data-analysis)
 - [DATA VISUALIZATION](#data-visualization)
 - [INSIGHTS](#insights)
-- [RECOMMENDATION](#recommendation)
+- [RECOMMENDATIONS](#recommendations)
 
 
 ## TRAVEL AND TOUR CUSTOMER ANALYSIS OVERVIEW
