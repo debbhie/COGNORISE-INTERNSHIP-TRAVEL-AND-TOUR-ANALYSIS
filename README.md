@@ -123,7 +123,28 @@ The correlation matrix shows the relationship between customer churn and other v
 * AGE-BASED CHURN RATE: The churn rate analysis by age reveals the following patterns;
   - Age 27 and 28
     churn rate: Approximately 56%
-    counts: 62 customers (age 27), 71 customer(age 28). Customers between age 27 and 28 exibit highest churn rate
+    counts: 62 customers (age 27), 71 customer(age 28). Customers between age 27 and 28 exibit highest churn rate. This could indicate that younger customer may be more likely to switch providers, possibly due to lack of loyalty or dissatisfaction with the services offerd.
+  - Age 29,30,31
+    churn rate: 18.57% (age 29), 14.41% (age 30), 14.56% (age 31).
+    counts: 70 customers (age 29), 236 customers (age 30), 103 customers (age 31). These age groups have moderate churn rates, suggesting that customers in their 20s to 30s may be more stable but there is still some churn. Age 30 has the highest count, so it may be key demographic to focus on for retention efforts.
+  - Age 33, 34, 35
+    churn rate: 27.59% (age 33), 18.69% (age 34), 25% (age 35)
+    count: The churn rate for this ages are relatively high with 33 showing the highest rate. It suggests that customers in their early to mid 30s are also prone to churn, potentially due to changing life circumstances or shifting priorities.
+  - Age 36, 37, 38
+    churn rate: 23.88% (age 36), 21.43% (age 37), 9.68% (age 38)
+    count: 67 customers(age 36), 126 customers(age 37), 31 customers (age 38). Older age groups show a decline churn rate, with age 38 having the lowest churn rate. This could suggest that older customers are more loyal or have established preferences that make them less likely to switch providers.
+
+* ANNUAL INCOME -BASED CHURN RATE
+  - High Income
+    churn rate: 57.86%
+    count: 159 customers. High income customers have the highest churn rate. This could br indicative of high expectations and a greater tendency to seek better alternative or more exclusive services. High income customers may also have more options and thus more opportunities to switch.
+  - Low Income
+    churn rate: 26.94%
+    count: 386 customers. Low income customers have a moderate churn rate while they churn less than the high income customers, the churn rate is significant. This group might be more orice, sensitive and could benefit from targeted strategies.
+  - Middle Income
+    churn rate: 6.85%
+    count: 409 customers. Middle income customers exibit the lowest churn rate. This suggest that customers in this income bracket are generally more stable and satisfied with the services. They might less likely to switch due to fewer financial resources or greater satisfaction with the current offerings.
+    
 ### predictive analysis
 was conducted to determine the accuracy of a churn prediction model using a confusion matrix.
 
