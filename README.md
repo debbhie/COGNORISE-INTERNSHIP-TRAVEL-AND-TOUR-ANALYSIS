@@ -55,7 +55,7 @@ These processes were carried out in jupyter notebook
 * Spelling errors were corrected
 
 ## DATA ANALYSIS
-### DESCRIPTIVE ANALYSIS
+## DESCRIPTIVE ANALYSIS
 This is the first step in understanding the basic characteristics of the dataset. It provides a summary of the central tendencies, distributions, and proportions of different variables.
 
 * Total number of customer: 954
@@ -90,7 +90,7 @@ This is the first step in understanding the basic characteristics of the dataset
  - Churned: 23.4%
  - Did Not Churn: 76.5%
 
-### EXPLORATORY DATA ANALYSIS
+## EXPLORATORY DATA ANALYSIS
 In this aspect of exploratory data analysis, correlation matrix and churn rate segmented by age, income and frquent flyer were used to derived results from the analysis. This helps to uncover patterns, correlations, and anomalies in the data.
 
 ### CORRELATION MATRIX
@@ -144,51 +144,63 @@ The correlation matrix shows the relationship between customer churn and other v
   - Middle Income
     churn rate: 6.85%
     count: 409 customers. Middle income customers exibit the lowest churn rate. This suggest that customers in this income bracket are generally more stable and satisfied with the services. They might less likely to switch due to fewer financial resources or greater satisfaction with the current offerings.
+
+* FREQUENT FLYER STATUS- BASED ON CHURN RATE
+  - Non-frequent flyer
+    churn rate: 11.35%
+    count: 608 customers. Customers who do not frequently fly have the lowest churn rate. This suggest that less frequent travelers might have loyalty or satisfaction with the services possibly due to fewer competing options or lower expectations.
+  - Frequent flyer
+    churn rate: 51.40%
+    count: 286 customers. Frequent flyers exibit the hughest churn rate. This indicate that customers who frquently use the company's services might be more likely to churn possibly due to high expectation or better offers from competitors.
+  - No Record
+    churn rate: 13.3%
+    count: 60 customers. Customers with no record of frequent flying have a moderate churn rate. This group is likely a mixed bag with varied reasons for their status and churn behavior.
     
-### predictive analysis
-was conducted to determine the accuracy of a churn prediction model using a confusion matrix.
+## PREDICTIVE ANALYSIS
+* MODEL ACCURACY (89.20%): This represent the proportion of corrcetly predicted churn and non-churn instance out of thr total predictions made by the model. In this case, the model correctly predicted whether a customer churner or not 89.20% of the time. This metric indicates that the model performs reasonably well overall.
 
-* Model Performance Metrics
-Accuracy: 27%
-The model correctly predicted customer churn only 27% of the time, indicating a need for model improvement.
+* CONFUSION MATRIX: This provides a detailed view of model's performance in predicting customer churn.
+  - True Negative (TN): 206
+  - False Positive (TP): 13
+  - False Negative (FN): 18
+  - True Positive (TP): 50
 
-* Precision: 24%
-Out of all customers predicted to churn, only 24% actually did, showing a high rate of false positives.
+  - True Negative: The number of non-churning customers correctly predicted as not churning, there are 206 customers.
+  - False Positive: The number of customers who were predicted to churn but did not churn. 13 non churning customers were incorretly label as churners.
+  - False Negative: The number of churning customers incorrectly predicted as non-churners, 18 customers but they actually churned.
+  - True Positive: The number of churning customers correctly predicted as churners, 50 customers and they actually churned.
 
-* Recall: 99%
-The model identified 99% of actual churned customers, but this high recall is at the expense of precision.
+* PERFORMANCE METRICS
+  - Precision (0.7937 or 79.37%): Precision is the ratio of correctly predicted positive observation (true positive) to the total predicted positive (true positive + false positive). It measures how many predicted churner did actually churn.
+    A precision of 0.7937 means 79.39% of the instance predicted churners did churn. Thia indicates that the modek is good at identifying true churners.
 
+  - Recall (0.7353 or 73.53%): Recall is the ratio of correctly predicted positive observation (true positive) to the total actual positives (true positive + false negative). It measures how many of the actual churner were correctly identified by the model.
+    A recall of 73.53% of actual churner means that the model successfully captures most of the churn cases.
+
+  - F1 score (0.7634 or 76.34%): F1 score is the harmonic mean of precision and recall, providing a single metric that balances both. It is particularly useful when dealing with imbalance dataset.
+    F1 score of 76.34% balances precision and recall providing a single metric tht captured both false positive and false negative. A score od 0.7634 suggests a good balance.
+
+  The model correctly identified 206 customers who didnot churn and 50 customers who churn. There were 13 cases the model was incorrect.
+
+## INSIGHTS FOR MODEL ACCURACY
+* High overall accuracy: The model accuracy of 89.20% indicates the strong overall performance. It reliably distinguishes between customers who will churn and those who will not.
+* Precision and recall balance: The precision of 79.37% and recall of 73.53% shows a reasonable balance. This means that while the model is good at predicting actual churners, it can still be iproved to reduce number of missed churn cases.
+* Focus on reducing false negative: With 18 false negatives, the model misses a notable amount of actual churner.
+* False positive impact: Although the rate is low, it is important to minimize these as they can lead to unnecessary retention effirts for customers who are not at risk of churning.
+
+## RECOMMENDATION FOR MODEL ACCURACY
+* Refine the model: Continously refine the model by incorporating more features or trying different algoriths to improve recall without significantly compromising precision.
+* Target interventions: Use the model's predictions to implement targeted retention strategies for at-risk customers, especially those identified as likely churn.
+* Monitor model performance: Regularly monitor the  model's performance and recalibrate as needed to adapt to changing customer behavior patterns.
+* Customer feedback: Collect and analyze feedback from customers, particularlt those whochurn, to identify potential areas of improvement in service offerings and customer satisfaction.
+  
 ## DATA VISUALIZATION
 
 ![travel pics](https://github.com/debbhie/COGNORISE-INTERNSHIP-TRAVEL-AND-TOUR-ANALYSIS/assets/161854079/be610710-7b2a-454e-80b2-e0af867a34ec)
 
-## INSIGHTS
- * High Churn Rate Among Higher Income Customers: Higher income customers tend to churn more, possibly due to their greater number of alternatives. This group may seek higher value or more personalized services.
-
-* Significant Impact of Hotel Booking on Churn: Customers who book hotels through the company are less likely to churn, suggesting that these bookings enhance customer loyalty.
-
-* Frequent Flyers Are Loyal: Frequent flyers are less likely to churn, indicating they value the services provided by the company.
-
-* Service Usage and Churn: There is a slight increase in churn with more service usage, which could imply dissatisfaction with services or unmet expectations.
-
-* Social Media Sync and Churn: Accounts synced to social media show a slightly higher churn rate, potentially indicating that these customers are more exposed to competitors’ promotions or reviews.
-
-* Young Customers and Churn: Younger customers have a higher churn rate, possibly due to less brand loyalty and more flexibility in switching services.
 
 ## RECOMMENDATIONS
-* Enhance Value for High Income Customers: Develop premium services or loyalty programs tailored to high-income customers to reduce their churn rate.
 
-* Promote Hotel Booking Services: Strengthen and promote hotel booking services to increase customer retention. Consider offering exclusive deals or discounts for repeat customers.
-
-* Focus on Frequent Flyers: Continue to nurture and reward frequent flyers with benefits and personalized experiences to maintain their loyalty.
-
-* Improve Service Quality and Expectations Management: Investigate why customers using more services are slightly more likely to churn. Enhance service quality and set clear expectations to reduce churn.
-
-* Leverage Social Media Engagement: Since customers with social media-synced accounts are more prone to churn, improve social media engagement by offering exclusive promotions and engaging content.
-
-* Engage Younger Customers: Develop strategies to engage younger customers, such as offering trendy, budget-friendly packages or engaging them through social media campaigns.
-
-* Model Improvement: The current churn prediction model is not very accurate. Enhance the model by including more relevant features, using different algorithms, and improving data quality.
 
 By implementing these recommendations, the company can better understand its customer base, enhance customer satisfaction, and reduce churn rates, thereby driving growth and sustainability.
    
