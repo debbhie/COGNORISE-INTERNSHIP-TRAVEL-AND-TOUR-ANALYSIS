@@ -9,9 +9,15 @@
 - [KEY PERFORMANCE INDICATORS](#key-performance-indicators)
 - [DATA CLEANING](#data-cleaning)
 - [DATA ANALYSIS](#data-analysis)
-- [DATA VISUALIZATION](#data-visualization)
-- [INSIGHTS](#insights)
-- [RECOMMENDATIONS](#recommendations)
+- [PERCENTAGE OF FREQUENT FLYERS VS NON FREQUENT FLYERS DATA VISUALIZATION](percentage-of-frequent-flyers-vs-non-frequent-flyersdata-visualization)
+- [CORRELATION MATRIX DATA VISUALIZATION](correlation-matrix-data-visualization)
+- [BOX PLOT CHURN RATE DATA VISUALIZATION](box-plot-churn-rate-data-visualization)
+- [CHURN PREDICTION DATA VISUALIZATION](churn-prediction-data-visualization)
+- [INSIGHTS FOR MODEL ACCURACY](#insights-for-model-accuracy)
+- [RECOMMENDATIONS FOR MODEL ACCURACY](#recommendations-for-model-accuracy)
+- [FEATURES THAT PREDICTICTED CUSTOMERS CHURN](features-that-predicted-customers-churn)
+- [FEATURES THAT PREDICTED CUSTOMER CHURN DATA VISUALIZATION](features-that-predicted-customer-churn-data-visualization)
+- [RECOMMENDATIONS](recommendations)
 
 
 ## TRAVEL AND TOUR CUSTOMER ANALYSIS OVERVIEW
@@ -72,6 +78,9 @@ This is the first step in understanding the basic characteristics of the dataset
  - Frequent Flyers: 30%
  - Non-Frequent Flyers: 64%
  - No Record: 6%
+   
+## PERCENTAGE OF FREQUENT FLYERS VS NON FREQUENT FLYERS DATA VISUALIZATION
+![Screenshot_25-7-2024_202127_localhost](https://github.com/user-attachments/assets/21b4d970-4e37-4cec-bbfb-38243b7abda1)
 
 * Income Distribution
  - High Income: 17%
@@ -119,6 +128,9 @@ The correlation matrix shows the relationship between customer churn and other v
 * ACCOUNT SYNCED
   - Hotel booking: A slight negative correlation(-0.1), suggesting that customers who sync their account to social media are slightly less to book hotel through the company's services.
 
+## CORRELATION MATRIX DATA VISUALIZATION
+![Screenshot_25-7-2024_202312_localhost](https://github.com/user-attachments/assets/1f700c33-857f-4905-bcda-f45ecebdbb1b)
+
 ### CHURN RATE ANALYSIS
 * AGE-BASED CHURN RATE: The churn rate analysis by age reveals the following patterns;
   - Age 27 and 28
@@ -144,6 +156,9 @@ The correlation matrix shows the relationship between customer churn and other v
   - Middle Income
     churn rate: 6.85%
     count: 409 customers. Middle income customers exibit the lowest churn rate. This suggest that customers in this income bracket are generally more stable and satisfied with the services. They might less likely to switch due to fewer financial resources or greater satisfaction with the current offerings.
+
+  ## BOX PLOT CHURN RATE DATA VISUALIZATION
+![Screenshot_25-7-2024_20244_localhost](https://github.com/user-attachments/assets/73c4553f-a93f-4a15-92eb-4610533b4e10)
 
 * FREQUENT FLYER STATUS- BASED ON CHURN RATE
   - Non-frequent flyer
@@ -181,6 +196,10 @@ The correlation matrix shows the relationship between customer churn and other v
     F1 score of 76.34% balances precision and recall providing a single metric tht captured both false positive and false negative. A score od 0.7634 suggests a good balance.
 
   The model correctly identified 206 customers who didnot churn and 50 customers who churn. There were 13 cases the model was incorrect.
+  
+## CHURN PREDICTION DATA VISUALIZATION
+  ![Screenshot_25-7-2024_202433_localhost](https://github.com/user-attachments/assets/4e536fee-9b41-400f-9ec1-c7f9c6f5d841)
+
 
 ## INSIGHTS FOR MODEL ACCURACY
 * High overall accuracy: The model accuracy of 89.20% indicates the strong overall performance. It reliably distinguishes between customers who will churn and those who will not.
@@ -194,10 +213,6 @@ The correlation matrix shows the relationship between customer churn and other v
 * Monitor model performance: Regularly monitor the  model's performance and recalibrate as needed to adapt to changing customer behavior patterns.
 * Customer feedback: Collect and analyze feedback from customers, particularlt those whochurn, to identify potential areas of improvement in service offerings and customer satisfaction.
   
-## DATA VISUALIZATION
-
-![travel pics](https://github.com/debbhie/COGNORISE-INTERNSHIP-TRAVEL-AND-TOUR-ANALYSIS/assets/161854079/be610710-7b2a-454e-80b2-e0af867a34ec)
-
 ## FEATURES THAT PREDICTED CUSTOMERS CHURN
 Feature importance indicates how much each featur or variable contributes to the prediction of customer churn.
  * Services opted (0.293172): This represents the number of times customers have opted for services from the company . It has the highest importance score, indicating as strong correlation with churn. This suggests that the frequency of service usage is a major factor in predicting whether a customer will churn. Customers who frequently use services might less likely to churn compared to those who rarely use them.
@@ -208,6 +223,9 @@ Feature importance indicates how much each featur or variable contributes to the
 * Account synced to social media(0.081477): It has moderate importance score, suggesting that account synchronization might influence churn behavior. Encourage customers to sync their account with social media platform might improve engagement and reduce churn. Providing benefits linked to account synchronization could br a potential strategy.
 * Annual Income (0.054909): It is a less significant factor in predicting churn compared to other features. Although, it has some influence, it is not as strong as factors like service opted and age.
 * Hotel Booked: It has no importance indicating it does not contribute to predicting churn.
+
+## FEATURES THAT PREDICTED CUSTOMER CHURN DATA VISUALIZATION
+![Screenshot_25-7-2024_202457_localhost](https://github.com/user-attachments/assets/eb0df9d9-3dfb-4c52-a964-4ac6a4bb51b1)
 
 
 ## RECOMMENDATIONS
