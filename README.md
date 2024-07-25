@@ -198,6 +198,17 @@ The correlation matrix shows the relationship between customer churn and other v
 
 ![travel pics](https://github.com/debbhie/COGNORISE-INTERNSHIP-TRAVEL-AND-TOUR-ANALYSIS/assets/161854079/be610710-7b2a-454e-80b2-e0af867a34ec)
 
+## FEATURES THAT PREDICTED CUSTOMERS CHURN
+Feature importance indicates how much each featur or variable contributes to the prediction of customer churn.
+ * Services opted (0.293172): This represents the number of times customers have opted for services from the company . It has the highest importance score, indicating as strong correlation with churn. This suggests that the frequency of service usage is a major factor in predicting whether a customer will churn. Customers who frequently use services might less likely to churn compared to those who rarely use them.
+   To reduce churn, the company should focus on enhancing the value and experience of the services offered, particularly targeting customers with low service usage.
+* Age (0.251049): Age is also a significant factor in predicting churn. This feature importance suggest that customers age has a considerable impact on their likelihood to churn. For instance, younger or olderr age group might exibit different churn behavior.
+  Tailoring maketing and retention strategies based on age groups could be beneficial. Understanding age-related preferences and behaviors can help design targeted campaigns to reduce churn
+* Frequent flyer (0.221278): It indicates whether the customer is a frequent flyer. Frequent flyers are most likely to have different churn patterns compared to non-frequent flyers. The company shoukd consider offering incentives or loyal programs specially designed for frequent flyers to enhance their engagement and reduce the likelihood of churn.
+* Account synced to social media(0.081477): It has moderate importance score, suggesting that account synchronization might influence churn behavior. Encourage customers to sync their account with social media platform might improve engagement and reduce churn. Providing benefits linked to account synchronization could br a potential strategy.
+* Annual Income (0.054909): It is a less significant factor in predicting churn compared to other features. Although, it has some influence, it is not as strong as factors like service opted and age.
+* Hotel Booked: It has no importance indicating it does not contribute to predicting churn.
+
 
 ## RECOMMENDATIONS
 
