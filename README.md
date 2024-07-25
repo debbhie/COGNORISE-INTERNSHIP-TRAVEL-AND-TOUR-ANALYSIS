@@ -8,7 +8,6 @@
 - [TYPES OF ANALYSIS USED FOR THIS PROJECT](#types-of-analysis-used-for-this-project)
 - [KEY PERFORMANCE INDICATORS](#key-performance-indicators)
 - [DATA CLEANING](#data-cleaning)
-- [DATA PROCESSING](#data-processing)
 - [DATA ANALYSIS](#data-analysis)
 - [DATA VISUALIZATION](#data-visualization)
 - [INSIGHTS](#insights)
@@ -16,7 +15,7 @@
 
 
 ## TRAVEL AND TOUR CUSTOMER ANALYSIS OVERVIEW
-This report presents an in-depth analysis of the "Tour and Travel Customer" dataset, which consists of 954 entries. The dataset includes various attributes related to customers such as age, frequent flyer status, income level, service usage, and whether they have synced their account to social media or booked a hotel through the company. The primary goal of this analysis is to provide insights into customer behavior, identify key factors influencing customer churn, and recommend strategies for improving customer retention and engagement.
+The analysis of tour and travel customer dataset aimed to understand customer behavior, predict customer churn and identify key factors contributing to churn. Various analysis were used in carrying out this project such as descriptive, exploratory data and predictive data analysis techniques. Various aspect of this dataset were examined which consist of customer travel data and their interactions with the company's services. This primary focus was on understanding the characteristics of customers, their service usage patterns and the factord that influence customers to churn.
 
 ##  LANDING PAGE
 * Age: This column consists of the ages of the customers.
@@ -32,8 +31,8 @@ This dataset is from cognorise internship.
 -[download here](https://www.kaggle.com/datasets/tejashvi14/tour-travels-customer-churn-prediction)
 
 ## TOOLS
-- Microsoft excel- data analysis
-- Microsft excel- dashboard/report
+- Python - Jupyter notebook
+- visualization - Jupyer notebook
 
 ## TYPES OF ANALYSIS USED FOR THIS PROJECT
 * Descriptive Analysis: Used to analyze and describe the main characteristics of the data set.
@@ -45,47 +44,38 @@ This dataset is from cognorise internship.
 * Average age of customers
 * Percentage of frequent flyers vs non frequent flyers
 * Proportion of income distribution of customers in different categories
-* Average number of services opted for by customers
-* Number of times customers opted for their services
 * Percentage of customers with account synced to their social media
 * Percentage of customers booking hotel through their services
 * Percentage of customers who churned vs customers who did not churn
-* Predictive model accuracy (accuracy, precision and recall)
+
 
 ## DATA CLEANING
-These processes were carried out using power query
+These processes were carried out in jupyter notebook
 * Duplicates were not found
 * Spelling errors were corrected
-  
-## DATA PROCESSING
-* Predicted_churn column was created
-* Churn_status column was created as well
-  
+
 ## DATA ANALYSIS
 ### DESCRIPTIVE ANALYSIS
 This is the first step in understanding the basic characteristics of the dataset. It provides a summary of the central tendencies, distributions, and proportions of different variables.
 
-* Total Customers: 954
+* Total number of customer: 954
   
-* Average Age: 32 years
+* Average Age: 32 years, 11 months
 
-* Average Number of Services Opted: 2 services
+* Average Number of Services Opted: 2.44 services
   
-* Distribution of Services Opted:
- - Opted 1 service: 404 customers
- - Opted 2 services: 176 customers
- - Opted 3 services: 124 customers
- - Opted 4 services: 117 customers
- - Opted 5 services: 69 customers
- - Opted 6 services: 64 customers
-   
+* Minimum age of customer: 27 years
+
+* Maximum age of customer is: 38years
+ 
 * Frequent Flyer Status
  - Frequent Flyers: 30%
  - Non-Frequent Flyers: 64%
  - No Record: 6%
+
 * Income Distribution
  - High Income: 17%
- - Middle Income: 40%
+ - Middle Income: 43%
  - Low Income: 40%
 
 * Social Media Synchronization
@@ -97,33 +87,43 @@ This is the first step in understanding the basic characteristics of the dataset
  - Not Booked: 60%
 
 * Customer Churn
- - Churned: 23%
- - Did Not Churn: 77%
+ - Churned: 23.4%
+ - Did Not Churn: 76.5%
 
 ### EXPLORATORY DATA ANALYSIS
-This helps to uncover patterns, correlations, and anomalies in the data.
+In this aspect of exploratory data analysis, correlation matrix and churn rate segmented by age, income and frquent flyer were used to derived results from the analysis. This helps to uncover patterns, correlations, and anomalies in the data.
 
-* Correlation Matrix
+### CORRELATION MATRIX
 The correlation matrix shows the relationship between customer churn and other variables. Here are the key findings:
 
-* Age Correlation with Churn: -13%
-Older customers tend to churn slightly less than younger customers.
+* AGE 
+ - Services opted: There is a slight negative correlation (-0.12), indicating that older customers tend to opt for fewer services.
+ - Target: Age has slight negative correlation(-0.13) with churn, suggesting that younger customers may have a higher likelihood of churning.
+ - Annual Income: There is virtually no correlation(-0.016) indicating age and income level are almost independent.
 
-* Service Usage Correlation with Churn: 4%
-A slight positive correlation indicates that more service usage is associated with a marginal increase in churn likelihood.
+* SERVICES OPTED
+  - Target: A very weak positive correlation(0.039), suggesting a slight increase in services opted could be associated with higher churn.
+  - Annual Income: A weak positive correlation(0.09) indicating that customers with higher income level tend to opt for more services.
+  - Frequent Flyer: slght negative correlation(-0.15) suggesting that customers who sync their account to social media tend to opt for fewer services.
+  - Hotel Bokking: A moderate positive correlation (0.16) indicating customers who book hotels tend to opt for more services.
+ 
+* ANNUAL INCOME
+  - Frequent Flyer: A weak positve correlation(0.2) indication higher income customer are more likely to be frequent flyers.
+  - Account Synced to socialmedia: A weak positive correlation(0.23) suggesting higher income customer are more likely to sync their account.
+  - Hotel Booking: Virtually no correlation(-0.024).
 
-* Frequent Flyer Correlation with Churn: -6%
-Frequent flyers are slightly less likely to churn compared to non-frequent flyers.
+* FREQUENT FLYER
+  - Account synced: virtually no correlation(-0.04).
+  - Hotel Booking: Aslight negative correlation(-0.13) indicating frequent flyers are less likely to book hortel through services.
 
-* Income Level Correlation with Churn: 14%
-Higher income is positively correlated with a higher likelihood of churn.
+* ACCOUNT SYNCED
+  - Hotel booking: A slight negative correlation(-0.1), suggesting that customers who sync their account to social media are slightly less to book hotel through the company's services.
 
-* Social Media Sync Correlation with Churn: 7%
-Customers who have their accounts synced to social media have a slightly higher churn rate.
-
-* Hotel Booking Correlation with Churn: -21%
-Customers who booked hotels through the company's services are significantly less likely to churn.
-
+### CHURN RATE ANALYSIS
+* AGE-BASED CHURN RATE: The churn rate analysis by age reveals the following patterns;
+  - Age 27 and 28
+    churn rate: Approximately 56%
+    counts: 62 customers (age 27), 71 customer(age 28). Customers between age 27 and 28 exibit highest churn rate
 ### predictive analysis
 was conducted to determine the accuracy of a churn prediction model using a confusion matrix.
 
