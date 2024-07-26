@@ -9,7 +9,7 @@
 - [KEY PERFORMANCE INDICATORS](#key-performance-indicators)
 - [DATA CLEANING](#data-cleaning)
 - [DATA ANALYSIS](#data-analysis)
-- [PERCENTAGE OF FREQUENT FLYERS VS NON FREQUENT FLYERS DATA VISUALIZATION](#percentage-of-frequent-flyers-vs-non-frequent-flyersdata-visualization)
+- [PERCENTAGE OF FREQUENT FLYERS VS NON FREQUENT FLYERS DATA VISUALIZATION](#percentage-of-frequent-flyers-vs-non-frequent-flyers-data-visualization)
 - [CORRELATION MATRIX DATA VISUALIZATION](#correlation-matrix-data-visualization)
 - [BOX PLOT CHURN RATE DATA VISUALIZATION](#box-plot-churn-rate-data-visualization)
 - [CHURN PREDICTION DATA VISUALIZATION](#churn-prediction-data-visualization)
