@@ -9,15 +9,15 @@
 - [KEY PERFORMANCE INDICATORS](#key-performance-indicators)
 - [DATA CLEANING](#data-cleaning)
 - [DATA ANALYSIS](#data-analysis)
-- [PERCENTAGE OF FREQUENT FLYERS VS NON FREQUENT FLYERS DATA VISUALIZATION](percentage-of-frequent-flyers-vs-non-frequent-flyersdata-visualization)
-- [CORRELATION MATRIX DATA VISUALIZATION](correlation-matrix-data-visualization)
-- [BOX PLOT CHURN RATE DATA VISUALIZATION](box-plot-churn-rate-data-visualization)
-- [CHURN PREDICTION DATA VISUALIZATION](churn-prediction-data-visualization)
+- [PERCENTAGE OF FREQUENT FLYERS VS NON FREQUENT FLYERS DATA VISUALIZATION](#percentage-of-frequent-flyers-vs-non-frequent-flyersdata-visualization)
+- [CORRELATION MATRIX DATA VISUALIZATION](#correlation-matrix-data-visualization)
+- [BOX PLOT CHURN RATE DATA VISUALIZATION](#box-plot-churn-rate-data-visualization)
+- [CHURN PREDICTION DATA VISUALIZATION](#churn-prediction-data-visualization)
 - [INSIGHTS FOR MODEL ACCURACY](#insights-for-model-accuracy)
 - [RECOMMENDATIONS FOR MODEL ACCURACY](#recommendations-for-model-accuracy)
-- [FEATURES THAT PREDICTICTED CUSTOMERS CHURN](features-that-predicted-customers-churn)
-- [FEATURES THAT PREDICTED CUSTOMER CHURN DATA VISUALIZATION](features-that-predicted-customer-churn-data-visualization)
-- [RECOMMENDATIONS](recommendations)
+- [FEATURES THAT PREDICTICTED CUSTOMERS CHURN](#features-that-predicted-customers-churn)
+- [FEATURES THAT PREDICTED CUSTOMER CHURN DATA VISUALIZATION](#features-that-predicted-customer-churn-data-visualization)
+- [RECOMMENDATIONS](#recommendations)
 
 
 ## TRAVEL AND TOUR CUSTOMER ANALYSIS OVERVIEW
